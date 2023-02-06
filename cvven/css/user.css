@@ -1,0 +1,646 @@
+/*modif*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+:root {
+    --green: #27ae60;
+    --orange: #f39c12;
+    --yellow: #baa56f;
+    --green1: #34ad19;
+    --red: #e74c3c;
+    --black: #333;
+    --blue: #2f6cc6;
+    --green1: #00ab66;
+    --red1: #dc210e;
+    --moreblack: #222;
+    --light-color: #666;
+    --white: #fff;
+    --light-bg: #f6f6f6;
+    --white-light: #f2f2f2;
+    --border: .3rem solid rgba(0, 0, 0, 0.47);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--moreblack);
+}
+
+header {
+    display: flex;
+    top: 0;
+    background-color: #666;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 8rem;
+}
+
+header img {
+    width: 134px;
+    border-radius: 60px;
+    margin: 0 2rem 0 1rem;
+    filter: invert(20%);
+    list-style-type: none;
+}
+
+header h4 {
+    color: var(--white);
+    float: right;
+    margin: 15px 25px 0 0;
+}
+
+.title-page {
+    position: relative;
+    font-size: .5rem;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    /* Place le text au centre de la page */
+    text-align: center;
+    /* Met le text en majuscule */
+    text-transform: uppercase;
+
+}
+
+section .title-image h3 {
+    color: var(--white-light);
+    text-align: center;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+section .Rochelle .title-image {
+    /* Permet de laisser de la marge pa rapport à l'élément */
+    padding: 7% 14%;
+    /* Permet de mettre un élément flottant à gauche */
+    float: left;
+    margin-top: -130px;
+
+}
+
+section .Rousses .title-image {
+    padding: 7% 14%;
+    /* Permet de mettre un élément flottant à droite */
+    float: right;
+    margin-top: -130px;
+
+}
+
+section .Saint-Antheme .title-image {
+    padding: 7% 14%;
+    float: left;
+    /* Permet de laisser de la marge par rapport au top (haut de la page) */
+    margin-top: -130px;
+}
+
+section .Villefort .title-image {
+    padding: 7% 14%;
+    float: right;
+    margin-top: -130px;
+}
+
+section .Rochelle .title-image img {
+    /* Modifie les pixels en hauteur */
+    height: 300px;
+    /* Modifie les pixels en largeur */
+    width: 400px;
+    /* Avoir des sommets arrondies */
+    border-radius: 10px;
+}
+
+section .Rousses .title-image img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+section .Saint-Antheme .title-image img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+section .Villefort .title-image img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+section .title-image a {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #00ab66;
+    background-color: #333;
+    padding: 3px;
+    width: 120px;
+    border-radius: 4px;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+section .title-image a:hover {
+    background-color: #00ab66;
+    color: #333;
+    transition: all .3s;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+/*-_-*-_-*-_-*-_-*-_-*-_-*   btns pour conn-déconn   *-_-*-_-*-_-*-_-*-_-*-_-*/
+
+.btn-deco-co {
+    display: flex;
+    justify-content: right;
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin-top: .2rem;
+}
+
+/*-_-*-_-*-_-*-_-*-_-*-_-*   btn pour déconnexion   *-_-*-_-*-_-*-_-*-_-*-_-*/
+
+.btn-deco {
+    display: flex;
+    justify-content: center;
+    background-color: var(--red1);
+    border: 2px outset #fff;
+    border-radius: 20px;
+    width: 10rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: .2s;
+    font-size: 1.1rem;
+}
+
+.btn-deco:hover {
+    background-color: #9e1a0b !important;
+}
+
+/*-_-*-_-*-_-*-_-*-_-*-_-*   btn pour connexion   *-_-*-_-*-_-*-_-*-_-*-_-*/
+
+.btn-co {
+    display: flex;
+    justify-content: center;
+    background-color: var(--green1);
+    border: 2px outset #fff;
+    border-radius: 20px;
+    width: 11rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: .2s;
+    font-size: 1.1rem;
+}
+
+.btn-co:hover {
+    background-color: #02804d;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 5rem auto;
+    top: 5rem;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(210, 210, 210, 0.616);
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.btn-hotel-voirplus {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 12px;
+    margin: -5rem auto 6rem auto;
+    width: 20rem;
+}
+
+.text {
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    transition: .2s;
+}
+
+.text:hover {
+    background-color: var(--green1);
+    color: #fff;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.title-region h1 {
+    margin-top: 10rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.title-p p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+ul {
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.ul-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu {
+    display: inline;
+    margin-right: 2rem;
+    background-color: #00ab66;
+}
+
+.header-menu a {
+    padding: 1.8rem 2rem 1.8rem 2rem;
+    text-decoration: none;
+    background-color: var(--yellow);
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: .2s;
+}
+
+.header-right {
+    position: absolute;
+    right: 0;
+}
+
+.header-menu a:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/*CSS pour la page reservation.php*/
+
+.table {
+    margin: auto;
+    padding: auto;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+th {
+    padding: auto;
+    padding: 1rem;
+    border: .1rem solid #ddd;
+}
+
+th{
+    padding: auto;
+    padding: 1rem;
+    border: .1rem solid #ddd;
+}
+
+th.top-th {
+    background-color: var(--green);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+tr,td {
+    padding: .2rem 3rem;
+    background-color: #666;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+
+td {
+    height: 2rem;
+}
+
+td a {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.639);
+    text-decoration: none;
+}
+
+.btn-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .3rem;
+    width: 6rem;
+    height: 2rem;
+    background-color: var(--green1);
+    border: 2px outset #fff;
+    border-radius: 1rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn-edit:hover {
+    background-color: #047246;
+    color: #fff;
+}
+
+.btn-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    background-color: var(--red1);
+    border: 2px outset #fff;
+    border-radius: 1rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn-delete:hover {
+    background-color: #25581a;
+    color: #fff;
+}
+
+.row {
+    margin-top: -1rem;
+  }
+  
+.message p {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 10rem;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+a:hover {
+    color: white;
+}
+
+.modal .modal-dialog .modal-content .modal-body h2.text-center p {
+    color: var(--red);
+    font-size: 1em;
+}
+
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 58rem;
+    top: 2rem;
+}
+
+.add_reservation_user {
+    margin-top: -1rem;
+    margin-left: 5rem;
+}
+
+  .title_nouvelle_reservation {
+    margin-top: 1rem;
+    margin-left: 5.5rem;
+    font-size: 1.5rem;
+  }
+
+  select {
+    word-wrap: normal;
+    width: 20rem;
+    margin-bottom: .3rem;
+    padding: .2rem 1rem;
+    border-radius: .5rem;
+  }
+
+  option {
+    border-radius: .5rem;
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 17rem;
+  }
+
+  .col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    margin-left: 2.3rem;
+  }
+
+  .col-sm-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+    margin-left: 2rem;
+  }
+
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    pointer-events: auto;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    outline: 0;
+    margin-top: -4rem;
+    width: 26.5rem;
+  }
+
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .7rem 2rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+  }
+
+  div.rows {
+    display: block;
+    width: 170%;
+    margin-top: -1rem;
+    margin-left: -19rem;
+  }
+
+  .switch {
+    margin-left: 1rem;
+  }
+
+
+section.king_card {
+    display: flex;
+}
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.76);
+    transition: 0.3s;
+    width: 30%;
+    height: 37rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.623);
+  }
+  
+  /* Add some padding inside the card container */
+  .test {
+    padding: 2px 16px;
+  }
+
+  h4{
+    margin-top: 1rem;
+  }
