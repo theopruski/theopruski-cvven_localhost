@@ -1,8 +1,8 @@
 <?php
 Class Connection{
-    private $server = "mysql:host=mysql-cvven.alwaysdata.net;dbname=cvven_bdd_projet_hotel";
-    private $username = "cvven";
-    private $password = "G;d,Q7)=4wXj36qL";
+    private $server = "mysql:host=localhost;dbname=cvven_bdd_projet_hotel";
+    private $username = "root";
+    private $password = "root";
     private $options  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
     protected $conn;
 
@@ -19,4 +19,3 @@ Class Connection{
         $this->conn = null;
     }
 }
-?>
