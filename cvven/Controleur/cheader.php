@@ -1,5 +1,6 @@
 <?php
 require_once '../Controleur/conn_db.php';
+/* Ouvre une nouvelle session de l'utilisateur et une nouvelle connection à la database */
 session_start();
 $database = new Connection();
 $db = $database->open();
@@ -10,5 +11,3 @@ $prenom = isset($_SESSION['Prenom']) ? $_SESSION['Prenom'] : 'Erreur';
 $id = isset($_SESSION['ID']) ? $_SESSION['ID'] : 'Erreur';
 
 include '../Vue/common/header.php';
-
-?>
