@@ -4,7 +4,7 @@ class Connection
     /* création des variables de connexion à la database $server, $usname, $password[il faut le sécuriser dans un autre document], $options, $conn */
     private $server = "mysql:host=localhost;dbname=cvven_bdd_projet_hotel";
     private $username = "root";
-    private $password = "root";
+    private $password = "";
     private $options  = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,);
     protected $conn;
 
