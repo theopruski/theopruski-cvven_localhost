@@ -45,13 +45,13 @@ if (isset($_POST['Envoyer'])) {
                 $message = 'Les 2 mots de passe sont différents ! ❌';
             } else {
                 /* sinon création du client et execution de l'INSERT SQL dans la bdd */
-                $sql = ("INSERT INTO `Client`(`Nom`, `Prenom`, `telephone`, `mail`, `password`) VALUES ($nom','$prenom','$telephone', '$mail','$password')");
+                $sql = ("INSERT INTO `Client`(`Nom`, `Prenom`, `telephone`, `mail`, `password`) VALUES (:nom, :prenom, :telephone, :mail, :password)");
                 $stmt = $db->prepare($sql);
-                $stmt->bindParam('Nom', $nom);
-                $stmt->bindParam('Prenom', $prenom);
-                $stmt->bindParam('telephone', $telephone);
-                $stmt->bindParam('mail', $mail);
-                $stmt->bindParam('password', $password);
+                $stmt->bindParam(':nom', $nom);
+                $stmt->bindParam(':prenom', $prenom);
+                $stmt->bindParam(':telephone', $telephone);
+                $stmt->bindParam(':mail', $mail);
+                $stmt->bindParam(':password', $password);
                 /* Si la requete à fonctionnée alors message de confirmation de création de client */
                 if ($stmt->execute()) {
                     $message1 = 'Nouveau client Enregistré. Merci ! ✅';
